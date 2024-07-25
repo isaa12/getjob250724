@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Postagens</title>
+  <link rel="stylesheet" href="areadepostagem.css">
+</head>
+<body>
+  <header>
+    <h1>Encontre sua vaga de emprego aqui!</h1>
+    <div class="search-bar">
+      <input type="search" id="search-input" placeholder="Pesquisar...">
+      <br>
+      <button id="filter-button"><i class="fas fa-filter"></i>Filtragem</button>
+    </div>
+  </header>
+  <main>
+    <div class="postagens-container">
+      
+    </div>
+  </main>
+
+  <script>
+
+// Função para criar uma postagem
+function criarPostagem(postagem) {
+const postagemHTML = `
+  <div class="postagem">
+    <img src="${postagem.imagem}" alt="Imagem da postagem">
+    <h2>${postagem.telefone}</h2>
+    <p>${postagem.descricao}</p>
+  </div>
+`;
+return postagemHTML;
+}
+
+// Função para exibir as postagens
+function exibirPostagens() {
+const postagensContainer = document.querySelector('.postagens-container');
+postagensContainer.innerHTML = '';
+postagens.forEach }
+
+  </script>
+</body>
+</html>
